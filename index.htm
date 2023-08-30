@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Window Size</title>
+<script>
+  function displayWindowSize() {
+    var width = window.outerWidth;
+    var height = window.outerHeight;
+    document.getElementById("sizeDisplay").textContent = "Width: " + width + "px, Height: " + height + "px";
+  }
+
+  window.onload = displayWindowSize;
+  window.onresize = displayWindowSize;
+</script>
+</head>
+<body>
+<p id="sizeDisplay">Initializing...</p>
+</body>
+</html>
